@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "titulo": "Item 1",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 1 proveniente de un JSON local.",
+    "anio": 2001
+  },
+  {
+    "id": 2,
+    "titulo": "Item 2",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 2 proveniente de un JSON local.",
+    "anio": 2002
+  },
+  {
+    "id": 3,
+    "titulo": "Item 3",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 3 proveniente de un JSON local.",
+    "anio": 2003
+  },
+  {
+    "id": 4,
+    "titulo": "Item 4",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 4 proveniente de un JSON local.",
+    "anio": 2004
+  },
+  {
+    "id": 5,
+    "titulo": "Item 5",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 5 proveniente de un JSON local.",
+    "anio": 2005
+  },
+  {
+    "id": 6,
+    "titulo": "Item 6",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 6 proveniente de un JSON local.",
+    "anio": 2006
+  },
+  {
+    "id": 7,
+    "titulo": "Item 7",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 7 proveniente de un JSON local.",
+    "anio": 2007
+  },
+  {
+    "id": 8,
+    "titulo": "Item 8",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 8 proveniente de un JSON local.",
+    "anio": 2008
+  },
+  {
+    "id": 9,
+    "titulo": "Item 9",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 9 proveniente de un JSON local.",
+    "anio": 2009
+  },
+  {
+    "id": 10,
+    "titulo": "Item 10",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 10 proveniente de un JSON local.",
+    "anio": 2010
+  },
+  {
+    "id": 11,
+    "titulo": "Item 11",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 11 proveniente de un JSON local.",
+    "anio": 2011
+  },
+  {
+    "id": 12,
+    "titulo": "Item 12",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 12 proveniente de un JSON local.",
+    "anio": 2012
+  },
+  {
+    "id": 13,
+    "titulo": "Item 13",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 13 proveniente de un JSON local.",
+    "anio": 2013
+  },
+  {
+    "id": 14,
+    "titulo": "Item 14",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 14 proveniente de un JSON local.",
+    "anio": 2014
+  },
+  {
+    "id": 15,
+    "titulo": "Item 15",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 15 proveniente de un JSON local.",
+    "anio": 2015
+  },
+  {
+    "id": 16,
+    "titulo": "Item 16",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 16 proveniente de un JSON local.",
+    "anio": 2016
+  },
+  {
+    "id": 17,
+    "titulo": "Item 17",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 17 proveniente de un JSON local.",
+    "anio": 2017
+  },
+  {
+    "id": 18,
+    "titulo": "Item 18",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 18 proveniente de un JSON local.",
+    "anio": 2018
+  },
+  {
+    "id": 19,
+    "titulo": "Item 19",
+    "categoria": "Libros",
+    "descripcion": "Descripción breve del item 19 proveniente de un JSON local.",
+    "anio": 2019
+  },
+  {
+    "id": 20,
+    "titulo": "Item 20",
+    "categoria": "Películas",
+    "descripcion": "Descripción breve del item 20 proveniente de un JSON local.",
+    "anio": 2020
+  }
+]

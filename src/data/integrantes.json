@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gabriela",
+    "ubicacion": "Buenos Aires",
+    "edad": 44,
+    "habilidades": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "peliculas": [
+      "Sexto ",
+      "El Exorcista",
+      "It"
+    ],
+    "musica": [
+      "Metallica",
+      "Guns N' Roses",
+      "Los redonditos de Ricota"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Facundo",
+    "ubicacion": "Córdoba",
+    "edad": 23,
+    "habilidades": [
+      "Node.js",
+      "APIs",
+      "Git",
+      "Figma"
+    ],
+    "peliculas": [
+      "Inception",
+      "Blade Runner 2049",
+      "The Social Network"
+    ],
+    "musica": [
+      "Gorillaz",
+      "Arctic Monkeys",
+      "Babasónicos"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Damián",
+    "ubicacion": "Mendoza",
+    "edad": 24,
+    "habilidades": [
+      "SQL",
+      "Python",
+      "Scrum",
+      "Testing"
+    ],
+    "peliculas": [
+      "Whiplash",
+      "Her",
+      "Seven"
+    ],
+    "musica": [
+      "Spinetta",
+      "Fito Páez",
+      "Foo Fighters"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Belén",
+    "ubicacion": "Rosario",
+    "edad": 21,
+    "habilidades": [
+      "UX/UI",
+      "Illustrator",
+      "CSS",
+      "HTML"
+    ],
+    "peliculas": [
+      "La La Land",
+      "Toy Story",
+      "Coco"
+    ],
+    "musica": [
+      "Dua Lipa",
+      "Taylor Swift",
+      "Aurora"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Emiliano",
+    "ubicacion": "La Plata",
+    "edad": 25,
+    "habilidades": [
+      "Java",
+      "Spring",
+      "Docker",
+      "MySQL"
+    ],
+    "peliculas": [
+      "The Dark Knight",
+      "Fight Club",
+      "Arrival"
+    ],
+    "musica": [
+      "The Strokes",
+      "Coldplay",
+      "No Te Va Gustar"
+    ]
+  }
+]
