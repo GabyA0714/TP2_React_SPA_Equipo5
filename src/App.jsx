@@ -1,6 +1,6 @@
 
 import { Routes, Route, Navigate } from 'react-router-dom'
-import Sidebar from './components/Sidebar.jsx'
+import Sidebar from './components/Sidebar/Sidebar'
 import Portada from './pages/Portada.jsx'
 import Bitacora from './pages/Bitacora.jsx'
 import Integrantes from './pages/Integrantes.jsx'
