@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-import Card from '../components/Card.jsx'
+import Card from '../components/Card/Card'
 
 export default function DataAPI() {
   const [data, setData] = useState([])
