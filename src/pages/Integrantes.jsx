@@ -1,7 +1,7 @@
 
 import integrantes from '../data/integrantes.json'
 import { Link } from 'react-router-dom'
-import Card from '../components/Card.jsx'
+import Card from '../components/Card/Card'
 
 export default function Integrantes() {
   return (

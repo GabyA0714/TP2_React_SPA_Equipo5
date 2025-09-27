@@ -1,0 +1,15 @@
+:root {
+    /* Colors */
+    --bg: #0f172a;
+    --panel: #111827;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --brand: #22d3ee;
+
+    /* spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.50rem;
+    --space-md: 0.75rem;
+    --space-lg: 1rem;
+    --space-xl: 2rem;
+}

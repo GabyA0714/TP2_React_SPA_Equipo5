@@ -1,7 +1,7 @@
 
 import { useParams, Link } from 'react-router-dom'
 import integrantes from '../data/integrantes.json'
-import Card from '../components/Card.jsx'
+import Card from '../components/Card/Card'
 
 export default function Integrante() {
   const { id } = useParams()

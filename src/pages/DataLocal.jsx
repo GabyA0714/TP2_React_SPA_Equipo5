@@ -1,6 +1,6 @@
 
 import items from '../data/items.json'
-import Card from '../components/Card.jsx'
+import Card from '../components/Card/Card'
 import { useState } from 'react'
 
 export default function DataLocal() {
