@@ -1,0 +1,28 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: var(--panel);
+  border-right: 1px solid #1f2937;
+  padding: var(--space-lg);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  margin: 0;
+}
+
+/* Breakpoints */
+@media (max-width: 400px) {
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+}
