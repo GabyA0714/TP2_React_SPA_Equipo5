@@ -12,4 +12,15 @@
     --space-md: 0.75rem;
     --space-lg: 1rem;
     --space-xl: 2rem;
+
+    /* Radius */
+    --radius-xs: 0.25rem;
+    --radius-sm: 0.50rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 2rem;
+
+    /* Fonts */
+    --font-size-base: 1rem;
+    --font-size-lg: 1.1rem;
 }
