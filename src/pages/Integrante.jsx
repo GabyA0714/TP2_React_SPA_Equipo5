@@ -1,7 +1,7 @@
-
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import integrantes from '../data/integrantes.json'
 import Card from '../components/Card/Card'
+import Button from '../components/Button/Button'
 
 export default function Integrante() {
   const { id } = useParams()
@@ -11,7 +11,7 @@ export default function Integrante() {
     return (
       <section>
         <h2>Integrante no encontrado</h2>
-        <Link to="/integrantes">Volver</Link>
+        <Button url="/integrantes" text="Volver" />
       </section>
     )
   }
@@ -37,7 +37,7 @@ export default function Integrante() {
           </ol>
         </Card>
       </div>
-      <Link className="btn" to="/integrantes">← Volver a Integrantes</Link>
+      <Button url="/integrantes" text="← Volver a Integrantes" />
     </section>
   )
 }

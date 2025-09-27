@@ -1,7 +1,6 @@
-
 import integrantes from '../data/integrantes.json'
-import { Link } from 'react-router-dom'
 import Card from '../components/Card/Card'
+import Button from '../components/Button/Button'
 
 export default function Integrantes() {
   return (
@@ -14,7 +13,7 @@ export default function Integrantes() {
               <li>Edad: {p.edad}</li>
               <li>Habilidades: {p.habilidades.join(', ')}</li>
             </ul>
-            <Link className="btn" to={`/integrantes/${p.id}`}>Ver perfil</Link>
+            <Button url={`/integrantes/${p.id}`} text="Ver perfil" />
           </Card>
         ))}
       </div>
