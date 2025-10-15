@@ -1,142 +1,162 @@
 [
   {
     "id": 1,
-    "titulo": "Item 1",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 1 proveniente de un JSON local.",
-    "anio": 2001
+    "titulo": "Inception",
+    "categoria": "Ciencia ficción",
+    "descripcion": "Un ladrón que roba secretos a través de los sueños es contratado para implantar una idea en la mente de un empresario.",
+    "anio": 2010,
+    "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
   },
   {
     "id": 2,
-    "titulo": "Item 2",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 2 proveniente de un JSON local.",
-    "anio": 2002
+    "titulo": "Avatar",
+    "categoria": "Aventura",
+    "descripcion": "En el planeta Pandora, un exmarine se ve dividido entre seguir órdenes humanas o proteger a los Na'vi.",
+    "anio": 2009,
+    "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY"
   },
   {
     "id": 3,
-    "titulo": "Item 3",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 3 proveniente de un JSON local.",
-    "anio": 2003
+    "titulo": "Interstellar",
+    "categoria": "Ciencia ficción",
+    "descripcion": "Un grupo de astronautas viaja a través de un agujero de gusano para encontrar un nuevo hogar para la humanidad.",
+    "anio": 2014,
+    "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E"
   },
   {
     "id": 4,
-    "titulo": "Item 4",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 4 proveniente de un JSON local.",
-    "anio": 2004
+    "titulo": "Titanic",
+    "categoria": "Drama romántico",
+    "descripcion": "Dos jóvenes de diferentes clases sociales se enamoran durante el trágico viaje inaugural del Titanic.",
+    "anio": 1997,
+    "trailer": "https://www.youtube.com/watch?v=kVrqfYjkTdQ"
   },
   {
     "id": 5,
-    "titulo": "Item 5",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 5 proveniente de un JSON local.",
-    "anio": 2005
+    "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
+    "categoria": "Fantasía",
+    "descripcion": "Frodo y sus amigos inician la misión de destruir el Anillo Único para salvar la Tierra Media.",
+    "anio": 2001,
+    "trailer": "https://www.youtube.com/watch?v=V75dMMIW2B4"
   },
   {
     "id": 6,
-    "titulo": "Item 6",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 6 proveniente de un JSON local.",
-    "anio": 2006
+    "titulo": "Harry Potter y la Piedra Filosofal",
+    "categoria": "Fantasía",
+    "descripcion": "Un niño descubre que es mago y asiste a Hogwarts, donde se enfrentará a misterios y magia.",
+    "anio": 2001,
+    "trailer": "https://www.youtube.com/watch?v=VyHV0BRtdxo"
   },
   {
     "id": 7,
-    "titulo": "Item 7",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 7 proveniente de un JSON local.",
-    "anio": 2007
+    "titulo": "El Rey León",
+    "categoria": "Animación",
+    "descripcion": "Simba, un joven león, debe reclamar su lugar como rey tras la traición de su tío Scar.",
+    "anio": 1994,
+    "trailer": "https://www.youtube.com/watch?v=4sj1MT05lAA"
   },
   {
     "id": 8,
-    "titulo": "Item 8",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 8 proveniente de un JSON local.",
-    "anio": 2008
+    "titulo": "Jurassic Park",
+    "categoria": "Ciencia ficción",
+    "descripcion": "Un parque temático con dinosaurios clonados se convierte en una pesadilla cuando las criaturas escapan.",
+    "anio": 1993,
+    "trailer": "https://www.youtube.com/watch?v=lc0UehYemQA"
   },
   {
     "id": 9,
-    "titulo": "Item 9",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 9 proveniente de un JSON local.",
-    "anio": 2009
+    "titulo": "Matrix",
+    "categoria": "Ciencia ficción",
+    "descripcion": "Un programador descubre que su mundo es una simulación creada por máquinas y lidera la rebelión humana.",
+    "anio": 1999,
+    "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8"
   },
   {
     "id": 10,
-    "titulo": "Item 10",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 10 proveniente de un JSON local.",
-    "anio": 2010
+    "titulo": "Forrest Gump",
+    "categoria": "Drama",
+    "descripcion": "Un hombre con un gran corazón narra su vida, marcada por eventos históricos y un amor eterno.",
+    "anio": 1994,
+    "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg"
   },
   {
     "id": 11,
-    "titulo": "Item 11",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 11 proveniente de un JSON local.",
-    "anio": 2011
+    "titulo": "Gladiador",
+    "categoria": "Acción",
+    "descripcion": "Un general romano es traicionado y busca venganza mientras se convierte en gladiador.",
+    "anio": 2000,
+    "trailer": "https://www.youtube.com/watch?v=owK1qxDselE"
   },
   {
     "id": 12,
-    "titulo": "Item 12",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 12 proveniente de un JSON local.",
-    "anio": 2012
+    "titulo": "Avengers: Endgame",
+    "categoria": "Superhéroes",
+    "descripcion": "Los Vengadores se reúnen para revertir el daño causado por Thanos y salvar el universo.",
+    "anio": 2019,
+    "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c"
   },
   {
     "id": 13,
-    "titulo": "Item 13",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 13 proveniente de un JSON local.",
-    "anio": 2013
+    "titulo": "Black Panther",
+    "categoria": "Superhéroes",
+    "descripcion": "T'Challa regresa a Wakanda para asumir el trono, pero un enemigo desafía su liderazgo.",
+    "anio": 2018,
+    "trailer": "https://www.youtube.com/watch?v=xjDjIWPwcPU"
   },
   {
     "id": 14,
-    "titulo": "Item 14",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 14 proveniente de un JSON local.",
-    "anio": 2014
+    "titulo": "Spider-Man: No Way Home",
+    "categoria": "Superhéroes",
+    "descripcion": "Peter Parker pide ayuda al Doctor Strange para que el mundo olvide su identidad secreta.",
+    "anio": 2021,
+    "trailer": "https://www.youtube.com/watch?v=JfVOs4VSpmA"
   },
   {
     "id": 15,
-    "titulo": "Item 15",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 15 proveniente de un JSON local.",
-    "anio": 2015
+    "titulo": "Coco",
+    "categoria": "Animación",
+    "descripcion": "Miguel sueña con ser músico y viaja al mundo de los muertos para descubrir su legado familiar.",
+    "anio": 2017,
+    "trailer": "https://www.youtube.com/watch?v=Rvr68u6k5sI"
   },
   {
     "id": 16,
-    "titulo": "Item 16",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 16 proveniente de un JSON local.",
-    "anio": 2016
+    "titulo": "Frozen",
+    "categoria": "Animación",
+    "descripcion": "Anna y Elsa descubren el poder del amor y la familia en un reino cubierto de hielo.",
+    "anio": 2013,
+    "trailer": "https://www.youtube.com/watch?v=TbQm5doF_Uc"
   },
   {
     "id": 17,
-    "titulo": "Item 17",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 17 proveniente de un JSON local.",
-    "anio": 2017
+    "titulo": "Toy Story",
+    "categoria": "Animación",
+    "descripcion": "Los juguetes de Andy cobran vida y enfrentan una crisis cuando llega un nuevo competidor: Buzz Lightyear.",
+    "anio": 1995,
+    "trailer": "https://www.youtube.com/watch?v=rNk1Wi8SvNc"
   },
   {
     "id": 18,
-    "titulo": "Item 18",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 18 proveniente de un JSON local.",
-    "anio": 2018
+    "titulo": "Shrek",
+    "categoria": "Animación",
+    "descripcion": "Un ogro gruñón emprende un viaje para rescatar a una princesa con la ayuda de un burro parlante.",
+    "anio": 2001,
+    "trailer": "https://www.youtube.com/watch?v=CwXOrWvPBPk"
   },
   {
     "id": 19,
-    "titulo": "Item 19",
-    "categoria": "Libros",
-    "descripcion": "Descripción breve del item 19 proveniente de un JSON local.",
-    "anio": 2019
+    "titulo": "Los Increíbles",
+    "categoria": "Animación",
+    "descripcion": "Una familia de superhéroes intenta llevar una vida normal mientras lucha contra un villano tecnológico.",
+    "anio": 2004,
+    "trailer": "https://www.youtube.com/watch?v=eZbzbC9285I"
   },
   {
     "id": 20,
-    "titulo": "Item 20",
-    "categoria": "Películas",
-    "descripcion": "Descripción breve del item 20 proveniente de un JSON local.",
-    "anio": 2020
+    "titulo": "Encanto",
+    "categoria": "Animación",
+    "descripcion": "La familia Madrigal vive en una casa mágica, donde cada miembro tiene un don... excepto Mirabel.",
+    "anio": 2021,
+    "trailer": "https://www.youtube.com/watch?v=CaimKeDcudo"
   }
 ]

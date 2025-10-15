@@ -1,6 +1,5 @@
-
 import { useEffect, useState } from 'react'
-import Card from '../components/Card/Card'
+import Card from '../components/Card.jsx'   // 👈 agregamos la extensión explícita
 
 export default function DataAPI() {
   const [data, setData] = useState([])
@@ -30,7 +29,8 @@ export default function DataAPI() {
 
   return (
     <section>
-      <h2>Datos desde API pública</h2>
+      <h2>🪐 Datos desde API pública</h2>
+      <hr style={{ borderColor: '#22d3ee', marginBottom: '1rem' }} />
       <p>Rick and Morty API (12 resultados)</p>
       <div className="grid">
         {data.map((ch) => (

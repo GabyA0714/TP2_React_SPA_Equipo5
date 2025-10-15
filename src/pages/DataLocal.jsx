@@ -1,6 +1,5 @@
-
 import items from '../data/items.json'
-import Card from '../components/Card/Card'
+import Card from '../components/Card.jsx'
 import { useState } from 'react'
 
 export default function DataLocal() {
@@ -13,7 +12,8 @@ export default function DataLocal() {
 
   return (
     <section>
-      <h2>Datos desde JSON local</h2>
+      <h2>📦 Datos desde JSON local</h2>
+      <hr style={{ borderColor: '#22d3ee', marginBottom: '1rem' }} />
       <p>Mostrando {filtered.length} de {items.length} items.</p>
       <input
         className="input"
@@ -23,7 +23,12 @@ export default function DataLocal() {
       />
       <div className="grid">
         {filtered.map((it) => (
-          <Card key={it.id} title={it.titulo} subtitle={it.categoria}>
+          <Card
+            key={it.id}
+            title={it.titulo}
+            subtitle={it.categoria}
+            trailer={it.trailer}   
+          >
             <p>{it.descripcion}</p>
             <p className="muted">Año: {it.anio}</p>
           </Card>
@@ -32,3 +37,4 @@ export default function DataLocal() {
     </section>
   )
 }
+

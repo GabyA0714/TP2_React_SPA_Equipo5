@@ -1,5 +1,5 @@
 import integrantes from '../data/integrantes.json'
-import Card from '../components/Card/Card'
+import Card from '../components/Card'
 import Button from '../components/Button/Button'
 
 export default function Integrantes() {
