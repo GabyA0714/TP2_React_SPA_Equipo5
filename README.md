@@ -4,7 +4,10 @@
 Migración del TP1 (HTML/CSS/JS) a una **Single Page Application** con **React + React Router**.
 
 ## Integrantes
-
+- Maria Belen Cantarini Echezarreta
+- Damian Marcelo Gomez De Leo
+- Gabriela Aguilera
+- Emiliano Nuñez
 
 ## Secciones
 - Sidebar (fijo) con logo y menú
