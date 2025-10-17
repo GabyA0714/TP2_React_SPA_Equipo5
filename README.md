@@ -3,7 +3,7 @@
 
 Migración del TP1 (HTML/CSS/JS) a una **Single Page Application** con **React + React Router**.
 
-# Integrantes
+## Integrantes
 
 
 ## Secciones
