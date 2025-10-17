@@ -3,6 +3,9 @@
 
 Migración del TP1 (HTML/CSS/JS) a una **Single Page Application** con **React + React Router**.
 
+# Integrantes
+
+
 ## Secciones
 - Sidebar (fijo) con logo y menú
 - Portada (lista de integrantes)
