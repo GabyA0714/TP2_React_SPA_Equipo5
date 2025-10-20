@@ -20,32 +20,15 @@
 
 
 .image {
-  width: 200px;
-  height: 100%;
-  object-fit: cover;
+  width: 120px;         
+  height: 120px;
+  border-radius: 50%;    
+  object-fit: cover;     
+  margin: 1rem auto;     
   display: block;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border: 2px solid #4da6ff; 
 }
 
-.videoBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-md);
-  background-color: var(--brand-dark);
-  color: var(--text);
-  border-radius: var(--radius-sm);
-  text-decoration: none;
-  font-weight: var(--font-weight-bold);
-  transition: background-color var(--transition-fast);
-  margin-top: auto;
-  align-self: flex-start;
-}
-
-.videoBtn:hover {
-  background-color: var(--brand);
-  color: var(--bg);
-}
 
 .body {
   padding: var(--space-lg);
