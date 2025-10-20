@@ -12,9 +12,9 @@ export default function Card({ title, subtitle, img, trailer, children }) {
             href={trailer}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn"
+            className={styles.videoBtn}
           >
-            Ver tráiler 
+            🎥 Ver tráiler 
           </a>
         )}
       </div>
