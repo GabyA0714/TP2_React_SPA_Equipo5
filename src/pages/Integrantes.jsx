@@ -8,7 +8,7 @@ export default function Integrantes() {
       <h2>Integrantes</h2>
       <div className="grid">
         {integrantes.map((p) => (
-          <Card key={p.id} title={p.nombre} subtitle={p.ubicacion}>
+          <Card key={p.id} title={p.nombre} subtitle={p.ciudad} img={p.avatar}>
             <ul>
               <li>Edad: {p.edad}</li>
               <li>Habilidades: {p.habilidades.join(', ')}</li>

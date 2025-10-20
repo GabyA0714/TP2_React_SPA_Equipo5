@@ -18,9 +18,10 @@ export default function Integrante() {
 
   return (
     <section>
+      <img src={p.avatar} alt={`Foto de ${p.nombre}`} className="avatar" />
       <h2>{p.nombre}</h2>
       <div className="grid">
-        <Card title="Datos personales" subtitle={p.ubicacion}>
+        <Card title="Datos personales" subtitle={p.ciudad}>
           <ul>
             <li>Edad: {p.edad}</li>
             <li>Habilidades: {p.habilidades.join(', ')}</li>
