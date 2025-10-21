@@ -1,4 +1,3 @@
-
 # TP2 – SPA React | Equipo 5
 
 Migración del TP1 (HTML/CSS/JS) a una **Single Page Application** con **React + React Router**.
@@ -21,39 +20,29 @@ Migración del TP1 (HTML/CSS/JS) a una **Single Page Application** con **React +
 - `/datos-api` API pública
 
 ## Estructura
-```
 /
 ├─ index.html
 ├─ package.json
 ├─ vite.config.js
 ├─ public/
-│  ├─ logo.svg
-│  └─ diagrams/ (exportar PNG/JPG de los diagramas)
+│ ├─ logo.svg
+│ └─ diagrams/ (exportar PNG/JPG de los diagramas)
 └─ src/
-   ├─ App.jsx
-   ├─ main.jsx
-   ├─ styles/index.css
-   ├─ components/
-   │  ├─ Sidebar.jsx
-   │  └─ Card.jsx
-   ├─ data/
-   │  ├─ integrantes.json
-   │  └─ items.json
-   └─ pages/
-      ├─ Portada.jsx
-      ├─ Bitacora.jsx
-      ├─ Integrantes.jsx
-      ├─ Integrante.jsx
-      ├─ DataLocal.jsx
-      ├─ DataAPI.jsx
-      └─ NotFound.jsx
-```
+├─ App.jsx
+├─ main.jsx
+├─ styles/index.css
+├─ components/
+│ ├─ Sidebar.jsx
+│ └─ Card.jsx
+├─ data/
+│ ├─ integrantes.json
+│ └─ items.json
+└─ pages/
+├─ Portada.jsx
+├─ Bitacora.jsx
+├─ Integrantes.jsx
+├─ Integrante.jsx
+├─ DataLocal.jsx
+├─ DataAPI.jsx
+└─ NotFound.jsx
 
-## Cómo correr
-```bash
-npm i
-npm run dev
-# Deploy en Vercel (Vite): build -> npm run build, output -> dist/
-```
-
-> Falta actualizar  `src/data/integrantes.json` con datos reales y poner los diagramas en `public/diagrams/`.
