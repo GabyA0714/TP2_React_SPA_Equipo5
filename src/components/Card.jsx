@@ -1,8 +1,9 @@
+import styles from './Card.module.css'
 export default function Card({ title, subtitle, img, trailer, children }) {
   return (
-    <article className="card">
-      {img && <img src={img} alt={title} />}
-      <div className="card-body">
+    <article className={styles.card}>
+      {img && <img src={img} alt={title} className={styles.image} />}
+      <div className={styles.body}>
         <h3>{title}</h3>
         {subtitle && <p className="muted">{subtitle}</p>}
         <div className="card-content">{children}</div>
@@ -11,9 +12,9 @@ export default function Card({ title, subtitle, img, trailer, children }) {
             href={trailer}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn"
+            className={styles.videoBtn}
           >
-            Ver tráiler 
+            🎥 Ver tráiler 
           </a>
         )}
       </div>

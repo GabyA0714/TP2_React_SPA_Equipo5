@@ -115,3 +115,19 @@ h3 { margin-bottom: .25rem; }
   .sidebar { position: static; height: auto; }
   .grid { grid-template-columns: 1fr; }
 }
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+  display: block;
+  border: 2px solid #4da6ff;
+}
+.avatar {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.avatar:hover {
+  box-shadow: 0 0 10px #4da6ff;
+}

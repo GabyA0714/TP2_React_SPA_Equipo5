@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Gabriela",
-    "ubicacion": "Buenos Aires",
+    "ciudad": "Buenos Aires",
     "edad": 44,
     "habilidades": [
       "HTML",
@@ -12,101 +12,83 @@
     ],
     "peliculas": [
       "Sexto Sentido ",
-      "El Exorcista",
+      "El Conjuro",
       "It"
     ],
     "musica": [
       "Metallica",
       "Guns N' Roses",
       "Los redonditos de Ricota"
-    ]
+    ],
+    "avatar" : "/avatars/Gaby.jpg"
   },
   {
     "id": 2,
-    "nombre": "Facundo",
-    "ubicacion": "Córdoba",
+    "nombre": "Damián",
+    "ciudad": "Tigre",
     "edad": 23,
     "habilidades": [
-      "Node.js",
-      "APIs",
-      "Git",
-      "Figma"
+      "SQL",
+      "Django",
+      "Python",
+      "Docker"
     ],
     "peliculas": [
+      "Pulp Fiction",
       "Inception",
-      "Blade Runner 2049",
-      "The Social Network"
+      "The Dark Knight"
     ],
     "musica": [
-      "Gorillaz",
-      "Arctic Monkeys",
-      "Babasónicos"
-    ]
+      "Metallica",
+      "AC/DC",
+      "La Renga"
+    ],
+    "avatar" : "/avatars/Dami.jpg"
   },
   {
     "id": 3,
-    "nombre": "Damián",
-    "ubicacion": "Mendoza",
-    "edad": 24,
-    "habilidades": [
-      "SQL",
-      "Python",
-      "Scrum",
-      "Testing"
-    ],
-    "peliculas": [
-      "Whiplash",
-      "Her",
-      "Seven"
-    ],
-    "musica": [
-      "Spinetta",
-      "Fito Páez",
-      "Foo Fighters"
-    ]
-  },
-  {
-    "id": 4,
     "nombre": "Belén",
-    "ubicacion": "Rosario",
+    "ciudad": "San Fernando",
     "edad": 21,
     "habilidades": [
       "UX/UI",
-      "Illustrator",
+      "Figma",
       "CSS",
       "HTML"
     ],
     "peliculas": [
       "La La Land",
-      "Toy Story",
-      "Coco"
+      "Amelie",
+      "Orgullo y Prejuicio"
     ],
     "musica": [
-      "Dua Lipa",
+      "Shakira",
       "Taylor Swift",
-      "Aurora"
-    ]
+      "Soda Stereo"
+    ],
+    "avatar" : "/avatars/Belen.jpg"
   },
   {
-    "id": 5,
+    "id": 4,
     "nombre": "Emiliano",
-    "ubicacion": "La Plata",
+    "ciudad": "Vicente Lopez",
     "edad": 25,
     "habilidades": [
       "Java",
       "Spring",
-      "Docker",
-      "MySQL"
+      "Git",
+      "React"
     ],
     "peliculas": [
-      "The Dark Knight",
-      "Fight Club",
-      "Arrival"
+      "Star Wars",
+      "Matrix",
+      "El Padrino"
     ],
     "musica": [
-      "The Strokes",
-      "Coldplay",
-      "No Te Va Gustar"
-    ]
+      "Queen",
+      "Pink Floyd",
+      "Charly García"
+    ],
+    "avatar" : "/avatars/Emi.jpg"
   }
 ]
