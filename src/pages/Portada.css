@@ -1,6 +1,7 @@
-/* 🔮 Fondo general */
+/* 🔮 Fondo general (adaptado para móviles y escritorio) */
 .portada {
-  height: 100vh;
+  min-height: 100dvh; /* altura visible real */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +11,15 @@
   overflow: hidden;
   position: relative;
   animation: warpIntro 2.5s ease-out;
+  padding: 0;
+  margin: 0;
+}
+
+/* ✅ Fix para iPhone Safari */
+@supports (-webkit-touch-callout: none) {
+  .portada {
+    min-height: -webkit-fill-available;
+  }
 }
 
 /* 🌠 Capas de partículas */
@@ -48,12 +58,13 @@
 
 /* 🌀 Portal principal */
 .portal-container {
-  position: relative;
-  width: 220px;
-  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  position: relative;
+  width: 220px;
+  height: 220px;
   transform: scale(0);
   opacity: 0;
   transition: all 1.2s ease-out;
@@ -65,7 +76,7 @@
   opacity: 1;
 }
 
-/* Círculo brillante */
+/* 🪩 Círculo brillante */
 .portal-circle {
   position: absolute;
   width: 220px;
@@ -77,7 +88,7 @@
   filter: blur(1px);
 }
 
-/* Texto central */
+/* ✨ Texto central */
 .portal-text {
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
@@ -85,9 +96,10 @@
   text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffcc, 0 0 60px #00ffff;
   z-index: 2;
   animation: fadeInText 2.5s ease forwards;
+  text-align: center;
 }
 
-/* Frase inferior */
+/* 💬 Frase inferior */
 .portal-subtext {
   margin-top: 2rem;
   font-size: 1.1rem;
@@ -97,7 +109,35 @@
   z-index: 2;
 }
 
-/* ✨ Animaciones del portal */
+/* 🚀 Botón Multiverso */
+.btn-multiverso {
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  color: #00ffff;
+  border: 2px solid #00ffffaa;
+  border-radius: 50px;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #00ffff55;
+  transition: all 0.4s ease;
+  opacity: 0;
+  animation: fadeInButton 2s ease forwards;
+  animation-delay: 0.5s;
+  z-index: 5;
+}
+
+.btn-multiverso:hover {
+  color: #0b1120;
+  background: #00ffff;
+  box-shadow: 0 0 30px #00ffffcc, 0 0 60px #00ccff99;
+  transform: scale(1.05);
+}
+
+/* ✨ Animaciones generales */
 @keyframes swirl {
   0% {
     transform: rotate(0deg) scale(1);
@@ -130,7 +170,6 @@
   }
 }
 
-/* 🌌 Movimiento del fondo */
 @keyframes moveStars {
   from {
     background-position: 0 0;
@@ -149,7 +188,6 @@
   }
 }
 
-/* 🌀 Efecto de deformación inicial tipo portal */
 @keyframes warpIntro {
   0% {
     filter: blur(6px) brightness(1.5);
@@ -169,35 +207,6 @@
   }
 }
 
-/* 🚀 Botón Multiverso */
-.btn-multiverso {
-  margin-top: 2rem;
-  padding: 0.8rem 1.6rem;
-  font-size: 1.1rem;
-  color: #00ffff;
-  border: 2px solid #00ffffaa;
-  border-radius: 50px;
-  background: transparent;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 0 15px #00ffff55;
-  transition: all 0.4s ease;
-  opacity: 0;
-  animation: fadeInButton 2s ease forwards;
-  animation-delay: 0.5s;
-  z-index: 5;
-}
-
-.btn-multiverso:hover {
-  color: #0b1120;
-  background: #00ffff;
-  box-shadow: 0 0 30px #00ffffcc, 0 0 60px #00ccff99;
-  transform: scale(1.05);
-}
-
-/* ✨ Animación de aparición del botón */
 @keyframes fadeInButton {
   0% {
     opacity: 0;
@@ -210,3 +219,4 @@
     filter: blur(0);
   }
 }
+
