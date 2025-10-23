@@ -1,0 +1,212 @@
+/* 🔮 Fondo general */
+.portada {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0b1120 0%, #030712 100%);
+  color: #e2f1f8;
+  overflow: hidden;
+  position: relative;
+  animation: warpIntro 2.5s ease-out;
+}
+
+/* 🌠 Capas de partículas */
+.stars,
+.twinkling,
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  z-index: 0;
+}
+
+/* 🌌 Capa de estrellas fijas */
+.stars {
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.4;
+}
+
+/* ✨ Capa de brillo intermitente */
+.twinkling {
+  background: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  animation: moveStars 200s linear infinite;
+  opacity: 0.3;
+}
+
+/* 💫 Capa de partículas flotantes */
+.particles {
+  background: radial-gradient(circle, #00ffee22 1px, transparent 2px);
+  background-size: 50px 50px;
+  animation: moveParticles 120s linear infinite;
+  opacity: 0.4;
+}
+
+/* 🌀 Portal principal */
+.portal-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1.2s ease-out;
+  z-index: 1;
+}
+
+.portal-container.activo {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Círculo brillante */
+.portal-circle {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #00ffcc, #00aaff, #001133);
+  animation: swirl 6s linear infinite, pulseGlow 2s ease-in-out infinite alternate;
+  box-shadow: 0 0 40px #00ffff55, 0 0 80px #00ccff55;
+  filter: blur(1px);
+}
+
+/* Texto central */
+.portal-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffcc, 0 0 60px #00ffff;
+  z-index: 2;
+  animation: fadeInText 2.5s ease forwards;
+}
+
+/* Frase inferior */
+.portal-subtext {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #a5f3fc;
+  text-shadow: 0 0 10px #00ffff77;
+  animation: fadeInText 3s ease forwards;
+  z-index: 2;
+}
+
+/* ✨ Animaciones del portal */
+@keyframes swirl {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px #00ffff66, 0 0 40px #00ffcc33;
+  }
+  100% {
+    box-shadow: 0 0 40px #00ffffaa, 0 0 100px #00ccff55;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌌 Movimiento del fondo */
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes moveParticles {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 3000px -3000px;
+  }
+}
+
+/* 🌀 Efecto de deformación inicial tipo portal */
+@keyframes warpIntro {
+  0% {
+    filter: blur(6px) brightness(1.5);
+    transform: scale(1.2) rotate(5deg);
+  }
+  40% {
+    filter: blur(12px) brightness(2);
+    transform: scale(1.4) rotate(-5deg);
+  }
+  70% {
+    filter: blur(8px) brightness(1.8);
+    transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    filter: blur(0px) brightness(1);
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* 🚀 Botón Multiverso */
+.btn-multiverso {
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  color: #00ffff;
+  border: 2px solid #00ffffaa;
+  border-radius: 50px;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #00ffff55;
+  transition: all 0.4s ease;
+  opacity: 0;
+  animation: fadeInButton 2s ease forwards;
+  animation-delay: 0.5s;
+  z-index: 5;
+}
+
+.btn-multiverso:hover {
+  color: #0b1120;
+  background: #00ffff;
+  box-shadow: 0 0 30px #00ffffcc, 0 0 60px #00ccff99;
+  transform: scale(1.05);
+}
+
+/* ✨ Animación de aparición del botón */
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}

@@ -1,8 +1,17 @@
-import styles from './Logo.module.css'
-import logo from '/logo.jpg'
+// src/components/Logo/Logo.jsx
+import styles from "./Logo.module.css";
 
 export default function Logo() {
   return (
-    <img src={logo} alt="Logo Equipo 5" className={styles.logo} />
-  )
+    <div className={styles.logoContainer}>
+      <div className={styles.circleGlow}>
+        <img
+          src="/logoEquipo17.png"
+          alt="Logo Equipo 17"
+          className={styles.logo}
+        />
+      </div>
+      <h1 className={styles.title}>Equipo 17</h1>
+    </div>
+  );
 }

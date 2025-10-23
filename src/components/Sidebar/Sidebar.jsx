@@ -1,15 +1,14 @@
-import styles from './Sidebar.module.css'
-import Logo from '../Logo/Logo'
-import Navigation from '../Navigation/Navigation'
+import styles from "./Sidebar.module.css";
+import LogoEquipo17 from "../Logo/LogoEquipo17";
+import Navigation from "../Navigation/Navigation";
 
 export default function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.logoContainer}>
-        <Logo />
-        <h1 className={styles.title}>Equipo 5</h1>
+        <LogoEquipo17 />
       </div>
       <Navigation />
     </aside>
-  )
+  );
 }

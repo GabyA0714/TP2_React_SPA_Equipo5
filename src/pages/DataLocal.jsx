@@ -1,40 +1,41 @@
-import items from '../data/items.json'
-import Card from '../components/Card.jsx'
-import { useState } from 'react'
+import { useState } from "react";
+import items from "../data/items.json";
+import CardPeliculas from "../components/Cards/CardPeliculas";
+import "./DataLocal.css";
 
 export default function DataLocal() {
-  const [q, setQ] = useState('')
+  const [q, setQ] = useState("");
+  const [cat, setCat] = useState("Todas");
 
-  const filtered = items.filter(x =>
-    x.titulo.toLowerCase().includes(q.toLowerCase()) ||
-    x.categoria.toLowerCase().includes(q.toLowerCase())
-  )
+  const categorias = ["Todas", ...new Set(items.map(i => i.categoria))];
+
+  const filtered = items.filter(i => {
+    const texto = (i.titulo + " " + i.categoria).toLowerCase().includes(q.toLowerCase());
+    const categoria = (cat === "Todas" || i.categoria === cat);
+    return texto && categoria;
+  });
 
   return (
-    <section>
+    <section className="dl">
       <h2>📦 Datos desde JSON local</h2>
-      <hr style={{ borderColor: '#22d3ee', marginBottom: '1rem' }} />
-      <p>Mostrando {filtered.length} de {items.length} items.</p>
-      <input
-        className="input"
-        placeholder="Buscar por título o categoría…"
-        value={q}
-        onChange={e => setQ(e.target.value)}
-      />
-      <div className="grid">
-        {filtered.map((it) => (
-          <Card
-            key={it.id}
-            title={it.titulo}
-            subtitle={it.categoria}
-            trailer={it.trailer}   
-          >
-            <p>{it.descripcion}</p>
-            <p className="muted">Año: {it.anio}</p>
-          </Card>
+      <p>Mostrando {filtered.length} de {items.length} películas.</p>
+
+      <div className="dl__filters">
+        {categorias.map(c => (
+          <button key={c} onClick={()=>setCat(c)} className={`pill ${cat===c?"pill--on":""}`}>{c}</button>
         ))}
       </div>
+
+      <input
+        className="dl__input"
+        placeholder="Buscar por título o categoría…"
+        value={q}
+        onChange={e=>setQ(e.target.value)}
+      />
+
+      <div className="grid">{filtered.map(p => <CardPeliculas key={p.id} {...p} />)}</div>
     </section>
-  )
+  );
 }
+
 

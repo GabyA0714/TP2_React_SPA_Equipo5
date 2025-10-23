@@ -1,44 +1,47 @@
-import { useEffect, useState } from 'react'
-import Card from '../components/Card.jsx'   // 👈 agregamos la extensión explícita
+import { useEffect, useState } from "react";
+import CardApi from "../components/Cards/CardApi";
+import "./DataApi.css";
 
 export default function DataAPI() {
-  const [data, setData] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [err, setErr] = useState("");
 
   useEffect(() => {
-    async function load() {
+    (async () => {
       try {
-        setLoading(true)
-        setError(null)
-        const res = await fetch('https://rickandmortyapi.com/api/character?page=1')
-        if (!res.ok) throw new Error('Error al cargar API')
-        const json = await res.json()
-        setData(json.results.slice(0, 12))
+        setLoading(true);
+        const res = await fetch("https://rickandmortyapi.com/api/character?page=1");
+        if (!res.ok) throw new Error("Error al cargar API");
+        const json = await res.json();
+        setData(json.results.slice(0,12));
       } catch (e) {
-        setError(e.message)
+        setErr(e.message);
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
-    load()
-  }, [])
+    })();
+  }, []);
 
-  if (loading) return <p>Cargando datos…</p>
-  if (error) return <p>Error: {error}</p>
+  if (loading) return <p>Cargando…</p>;
+  if (err) return <p>Error: {err}</p>;
 
   return (
-    <section>
-      <h2>🪐 Datos desde API pública</h2>
-      <hr style={{ borderColor: '#22d3ee', marginBottom: '1rem' }} />
-      <p>Rick and Morty API (12 resultados)</p>
+    <section className="api">
+      <h2>🛸 Datos desde API pública</h2>
+      <p>Rick and Morty (12 resultados)</p>
       <div className="grid">
-        {data.map((ch) => (
-          <Card key={ch.id} title={ch.name} subtitle={ch.species} img={ch.image}>
-            <p>Estado: {ch.status} – Origen: {ch.origin?.name}</p>
-          </Card>
+        {data.map(ch => (
+          <CardApi
+            key={ch.id}
+            name={ch.name}
+            image={ch.image}
+            status={ch.status}
+            species={ch.species}
+            origin={ch.origin?.name}
+          />
         ))}
       </div>
     </section>
-  )
+  );
 }

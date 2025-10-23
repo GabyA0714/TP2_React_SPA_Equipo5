@@ -1,28 +1,13 @@
 .sidebar {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  background: var(--panel);
-  border-right: 1px solid #1f2937;
-  padding: var(--space-lg);
+  background-color: #0f172a; /* azul oscuro */
+  min-height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
 }
 
 .logoContainer {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-.title {
-  font-size: var(--font-size-lg);
-  margin: 0;
-}
-
-/* Breakpoints */
-@media (max-width: 400px) {
-  .sidebar {
-    position: static;
-    height: auto;
-  }
+  margin-bottom: 2rem;
 }
