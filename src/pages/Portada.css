@@ -1,83 +1,191 @@
-/* 🔮 Fondo general */
+/* === 🌌 Fondo general === */
 .portada {
-  min-height: 100dvh; /* ✅ usa el alto visible real en móviles */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at center, #0b1120 0%, #030712 100%);
-  color: #e2f1f8;
+  background: radial-gradient(circle at center, #0a0f1f 0%, #000 100%);
   overflow: hidden;
   position: relative;
-  animation: warpIntro 2.5s ease-out;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
+  color: #e2f1f8;
 }
 
-/* 📱 Ajuste portal responsive */
+/* 🌠 Estrellas animadas */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(white 1px, transparent 2px);
+  background-size: 60px 60px;
+  animation: moveStars 100s linear infinite;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50%, -50%); }
+}
+
+/* 🌀 Portal central */
 .portal-container {
   position: relative;
-  width: clamp(150px, 45vw, 220px);
-  height: clamp(150px, 45vw, 220px);
+  width: clamp(180px, 40vw, 280px);
+  height: clamp(180px, 40vw, 280px);
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0);
-  opacity: 0;
-  transition: all 1.2s ease-out;
-  z-index: 1;
-  margin-bottom: 2rem;
+  z-index: 2;
 }
 
-.portal-container.activo {
-  transform: scale(1);
-  opacity: 1;
+.portal-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#00ffcc, #00ff99, #00ffff, #00ccff, #00ffcc);
+  box-shadow: 0 0 30px #00ffffaa, 0 0 60px #00ccff55;
+  filter: blur(1.5px);
+  animation: swirlPortal 5s linear infinite, pulsePortal 3s ease-in-out infinite alternate;
 }
 
-/* Texto central */
+@keyframes swirlPortal {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulsePortal {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+/* Texto dentro del portal */
 .portal-text {
   font-family: "Orbitron", sans-serif;
-  font-size: clamp(1.4rem, 5vw, 2rem);
+  font-size: clamp(1.4rem, 3vw, 2.5rem);
   color: #ffffff;
   text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffcc, 0 0 60px #00ffff;
-  z-index: 2;
-  text-align: center;
+  z-index: 3;
+  animation: fadeInText 3s ease-out forwards 4s;
+  opacity: 0;
 }
 
-/* Frase inferior */
+@keyframes fadeInText {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Subtexto */
 .portal-subtext {
-  margin-top: 1rem;
-  font-size: clamp(1rem, 3vw, 1.3rem);
+  margin-top: 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: #a5f3fc;
   text-shadow: 0 0 10px #00ffff77;
   text-align: center;
+  animation: fadeInText 4s ease-out forwards 5s;
+  opacity: 0;
+  z-index: 3;
 }
 
-/* 📱 Media Queries */
-@media (max-height: 700px) {
+/* Botón Multiverso */
+.btn-multiverso {
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #00ffff;
+  border: 2px solid #00ffffaa;
+  border-radius: 50px;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #00ffff55;
+  transition: all 0.4s ease;
+  z-index: 3;
+  opacity: 0;
+  animation: fadeInText 5s ease-out forwards 6s;
+}
+
+.btn-multiverso:hover {
+  color: #0b1120;
+  background: #00ffff;
+  box-shadow: 0 0 30px #00ffffcc, 0 0 60px #00ccff99;
+  transform: scale(1.05);
+}
+
+/* 👽 Rick & Morty */
+.rick,
+.morty {
+  position: absolute;
+  width: clamp(90px, 15vw, 160px);
+  bottom: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* Rick entra, cruza y se desvanece */
+.rick {
+  left: -200px;
+  animation: enterRick 8s ease-in-out forwards;
+}
+
+@keyframes enterRick {
+  0% { transform: translateX(0); opacity: 0; }
+  25% { transform: translateX(250px); opacity: 1; }
+  50% { transform: translateX(400px) scale(1.1); opacity: 1; }
+  80% { transform: translateX(500px) scale(0.9); opacity: 0.5; }
+  100% { transform: translateX(600px); opacity: 0; }
+}
+
+/* Morty entra luego, cruza y desaparece */
+.morty {
+  right: -200px;
+  animation: enterMorty 8s ease-in-out 1s forwards;
+}
+
+@keyframes enterMorty {
+  0% { transform: translateX(0); opacity: 0; }
+  25% { transform: translateX(-250px); opacity: 1; }
+  50% { transform: translateX(-400px) scale(1.1); opacity: 1; }
+  80% { transform: translateX(-500px) scale(0.9); opacity: 0.5; }
+  100% { transform: translateX(-600px); opacity: 0; }
+}
+
+/* 🌟 Destello del portal cuando los personajes cruzan */
+.portal-circle {
+  animation: swirlPortal 5s linear infinite, pulsePortal 3s ease-in-out infinite alternate;
+}
+
+/* Efecto de flash sincronizado */
+@keyframes flashPortal {
+  0%, 90%, 100% { box-shadow: 0 0 30px #00ffffaa, 0 0 60px #00ccff55; }
+  50% { box-shadow: 0 0 120px #00ffcc, 0 0 200px #00ffff; filter: brightness(1.5); }
+}
+
+/* Aplica el destello cuando Rick y Morty están en escena */
+.rick,
+.morty {
+  animation-play-state: running;
+}
+
+/* Momento exacto del flash */
+.portal-circle.flash {
+  animation: swirlPortal 5s linear infinite, flashPortal 2.5s ease-in-out 3s 2;
+}
+
+
+/* Adaptación móvil */
+@media (max-width: 600px) {
   .portal-container {
-    transform: scale(0.85);
+    width: 200px;
+    height: 200px;
+  }
+  .rick,
+  .morty {
+    width: 100px;
   }
 }
-
-@media (max-width: 500px) {
-  .portal-container {
-    width: 180px;
-    height: 180px;
-  }
-
-  .portal-text {
-    font-size: 1.4rem;
-  }
-
-  .portal-subtext {
-    font-size: 1rem;
-    margin-top: 0.8rem;
-  }
-
-  .btn-multiverso {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-  }
-}
-
