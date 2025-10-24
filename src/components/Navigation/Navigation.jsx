@@ -10,6 +10,7 @@ export default function Navigation({ onLinkClick }) {
           <li><NavLink to="/integrantes" onClick={onLinkClick}>Integrantes</NavLink></li>
           <li><NavLink to="/datos-locales" onClick={onLinkClick}>Datos JSON</NavLink></li>
           <li><NavLink to="/datos-api" onClick={onLinkClick}>Datos API</NavLink></li>
+          <li><NavLink to="/diagramas" onClick={onLinkClick}>Diagramas</NavLink></li>
         </ul>
       </nav>
   )

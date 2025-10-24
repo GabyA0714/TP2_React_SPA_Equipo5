@@ -8,6 +8,7 @@ import Integrantes from './pages/Integrantes.jsx'
 import Integrante from './pages/Integrante.jsx'
 import DataLocal from './pages/DataLocal.jsx'
 import DataAPI from './pages/DataAPI.jsx'
+import Diagramas from './pages/Diagramas.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/integrante/:id" element={<Integrante />} />
           <Route path="/datos-locales" element={<DataLocal />} />
           <Route path="/datos-api" element={<DataAPI />} />
+          <Route path="/diagramas" element={<Diagramas />} />
           <Route path="/home" element={<Navigate to='/' replace />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
