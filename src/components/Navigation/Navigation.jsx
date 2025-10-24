@@ -1,15 +1,15 @@
 import styles from './Navigation.module.css'
 import { NavLink } from 'react-router-dom'
 
-export default function Navigation() {
+export default function Navigation({ onLinkClick }) {
   return (
       <nav>
         <ul className={styles.list}>
-          <li><NavLink to="/">Portada</NavLink></li>
-          <li><NavLink to="/bitacora">Bitácora</NavLink></li>
-          <li><NavLink to="/integrantes">Integrantes</NavLink></li>
-          <li><NavLink to="/datos-locales">Datos JSON</NavLink></li>
-          <li><NavLink to="/datos-api">Datos API</NavLink></li>
+          <li><NavLink to="/" onClick={onLinkClick}>Portada</NavLink></li>
+          <li><NavLink to="/bitacora" onClick={onLinkClick}>Bitácora</NavLink></li>
+          <li><NavLink to="/integrantes" onClick={onLinkClick}>Integrantes</NavLink></li>
+          <li><NavLink to="/datos-locales" onClick={onLinkClick}>Datos JSON</NavLink></li>
+          <li><NavLink to="/datos-api" onClick={onLinkClick}>Datos API</NavLink></li>
         </ul>
       </nav>
   )
