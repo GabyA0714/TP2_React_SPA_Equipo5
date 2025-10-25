@@ -37,8 +37,7 @@
     transition: all 0.4s ease;
     cursor: pointer;
     z-index: 3;
-    opacity: 0;
-    animation: fadeInText 5s ease-out forwards 6s;
+    opacity: 1;
 }
 
 .diagramas-buttons button:hover {
