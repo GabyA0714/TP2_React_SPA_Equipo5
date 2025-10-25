@@ -1,8 +1,11 @@
+import React from 'react';
+import './Bitacora.css';
+
 
 export default function Bitacora() {
   return (
-    <section>
-      <h2>📓 Bitácora del Proyecto</h2>
+    <section className="bitacora-page">
+      <h1>📓 Bitácora del Proyecto</h1>
       <p>Registro del proceso del TP2. Se ampliará en el TP3.</p>
 
       <details>

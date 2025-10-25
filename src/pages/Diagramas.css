@@ -1,13 +1,16 @@
 .diagramas-section {
     background-color: #0b1222;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 16px;
     margin: 0 auto;
-}
-.diagramas-title {
     text-align: center;
-    color: #e2f1f8;
-    margin-bottom: 20px;
+}
+
+.diagramas-title {
+    color: #a5f3fc;
+    text-shadow: 0 0 10px #22d3ee99;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .diagramas-buttons {
@@ -16,19 +19,35 @@
     gap: 15px;
     margin-top: 20px;
 }
-.diagramas-buttons button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #22d3ee;
-    color: #0b1222;
-    cursor: pointer;
-    font-weight: bold;
 
+.diagramas-buttons button {
+    margin: 40px 15px;
+    margin-top: 2rem;
+    padding: 0.8rem 1.6rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: #00ffff;
+    border: 2px solid #00ffffaa;
+    background: transparent;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px #00ffff55;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0;
+    animation: fadeInText 5s ease-out forwards 6s;
 }
+
 .diagramas-buttons button:hover {
-    background-color: #1fb8cc;
+    color: #0b1222;
+    background: #00ffff;
+    box-shadow: 0 0 30px #00ffffcc, 0 0 60px #00ccff99;
+    transform: scale(1.05);
 }
+
 .diagrama-content {
     margin-top: 30px;
     text-align: center;

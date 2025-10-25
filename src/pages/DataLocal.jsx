@@ -17,7 +17,7 @@ export default function DataLocal() {
 
   return (
     <section className="dl">
-      <h2>📦 Datos desde JSON local</h2>
+      <h1>📦 Datos desde JSON local</h1>
       <p>Mostrando {filtered.length} de {items.length} películas.</p>
 
       <div className="dl__filters">

@@ -19,7 +19,7 @@ export default function Diagramas() {
     const diagram = diagramasData[activeDiagram];
   return (
     <section className="diagramas-section">
-        <h1 className="diagramas-title">Diagramas del Proyecto</h1>
+        <h1 className="diagramas-title">📊 Diagramas del Proyecto</h1>
         <div className="diagramas-buttons">
             {Object.keys(diagramasData).map((key) => (
                 <button key={key} onClick={() => setActiveDiagram(key)}>

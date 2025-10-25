@@ -28,7 +28,7 @@ export default function DataAPI() {
 
   return (
     <section className="api">
-      <h2>🛸 Datos desde API pública</h2>
+      <h1>🛸 Datos desde API pública</h1>
       <p>Rick and Morty (12 resultados)</p>
       <div className="grid">
         {data.map(ch => (
