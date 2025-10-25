@@ -2,7 +2,7 @@
 export default function Bitacora() {
   return (
     <section>
-      <h2>Bitácora</h2>
+      <h2>📓 Bitácora del Proyecto</h2>
       <p>Registro del proceso del TP2. Se ampliará en el TP3.</p>
 
       <details>
@@ -10,6 +10,7 @@ export default function Bitacora() {
         <ul>
           <li>Sidebar fijo + rutas declarativas (React Router v6).</li>
           <li>Componentes reutilizables: Card y layouts con grid responsive.</li>
+          <li>Gestión de Estilos: Uso mixto de **CSS Global** (`index.css`) para estilos base y **CSS Modules** (`.module.css`) para componentes específicos, como el `Sidebar`, `Button` y las `Cards`, evitando colisiones.</li>
         </ul>
       </details>
 
@@ -18,6 +19,7 @@ export default function Bitacora() {
         <ul>
           <li>Parámetros de URL en rutas de detalle → uso de <code>useParams</code>.</li>
           <li>Fetch a API pública con manejo de loading y error.</li>
+          <li>Controlar el estado del menú hamburguesa para ocultar el `Sidebar` en móviles.</li>
         </ul>
       </details>
 
