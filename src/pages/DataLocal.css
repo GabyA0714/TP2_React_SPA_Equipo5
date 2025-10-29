@@ -10,7 +10,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* ✨ Buscador mejorado */
+
 .dl__input {
   width: 90%;
   max-width: 480px;
@@ -36,7 +36,7 @@
   box-shadow: 0 0 15px #22d3ee66;
 }
 
-/* 🔄 Animación del borde */
+
 @keyframes borderMove {
   0% {
     background-position: 0% 50%;
@@ -46,7 +46,7 @@
   }
 }
 
-/* 🧩 Grid de tarjetas */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -54,7 +54,7 @@
   justify-content: center;
 }
 
-/* 🎞️ Botones de categorías (filtros) */
+
 .filtros {
   display: flex;
   flex-wrap: wrap;

@@ -63,3 +63,6 @@ npm run dev
 ```
 
 > Falta actualizar  `src/data/integrantes.json` con datos reales y poner los diagramas en `public/diagrams/`.
+
+### 🌌 Nueva animación de portal (Octubre 2025)
+Se agregó una portada animada inspirada en Rick & Morty con un efecto de portal giratorio y un botón “Ingresar al Multiverso”. Mejora la presentación inicial del proyecto Equipo 17.

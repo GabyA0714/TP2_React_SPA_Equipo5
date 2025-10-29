@@ -1,22 +1,22 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
-import React, { useEffect, useState } from 'react'
-import Sidebar from './components/Sidebar/Sidebar'
-import HamburgerButton from './components/HamburguerButton/HamburguerButton.jsx'
-import Portada from './pages/Portada.jsx'
-import Bitacora from './pages/Bitacora.jsx'
-import Integrantes from './pages/Integrantes.jsx'
-import Integrante from './pages/Integrante.jsx'
-import DataLocal from './pages/DataLocal.jsx'
-import DataAPI from './pages/DataAPI.jsx'
-import Diagramas from './pages/Diagramas.jsx'
-import NotFound from './pages/NotFound.jsx'
+import { Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import Sidebar from './components/Sidebar/Sidebar';
+import HamburgerButton from './components/HamburguerButton/HamburguerButton.jsx';
+import Portada from './pages/Portada.jsx';
+import Bitacora from './pages/Bitacora.jsx';
+import Integrantes from './pages/Integrantes.jsx';
+import Integrante from './pages/Integrante.jsx';
+import DataLocal from './pages/DataLocal.jsx';
+import DataAPI from './pages/DataAPI.jsx';
+import Diagramas from './pages/Diagramas.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  }
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,7 +29,6 @@ export default function App() {
       window.removeEventListener('resize', handleResize);
     };
   }, [isMenuOpen]);
-  
 
   return (
     <div className="app">
@@ -44,10 +43,10 @@ export default function App() {
           <Route path="/datos-locales" element={<DataLocal />} />
           <Route path="/datos-api" element={<DataAPI />} />
           <Route path="/diagramas" element={<Diagramas />} />
-          <Route path="/home" element={<Navigate to='/' replace />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </div>
-  )
+  );
 }
